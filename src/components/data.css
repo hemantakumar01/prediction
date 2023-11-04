@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.span {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 7px;
+}
+.h1 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+.div {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: red;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+}
