@@ -5,10 +5,16 @@ import Register from "./components/Register";
 import OTP from "./components/OTP";
 import LoginForm from "./components/LoginForm";
 import CSVREADER from "./components/CSVREADER";
+import PredictionList from "./components/PredictionList";
+import ResultsDetailPage from "./components/ResultsDetailPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/khanapara",
     element: <Home />,
   },
   {
@@ -30,6 +36,14 @@ const router = createBrowserRouter([
   {
     path: "/csv",
     element: <CSVREADER />,
+  },
+  {
+    path: "/predictionList",
+    element: <PredictionList />,
+  },
+  {
+    path: "/results/:id",
+    element: <ResultsDetailPage />,
   },
 ]);
 function App() {
