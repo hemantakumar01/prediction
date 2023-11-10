@@ -87,7 +87,17 @@ const CSVREADER = () => {
       console.log(error);
     }
   };
-
+  const updatePlay = async () => {
+    try {
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_BACKEND_URL}/updatePlayToTrue/654cfae9740403b12dc160f1`,
+        { round1: true, round2: true, id: "654cfae9740403b12dc160f1" }
+      );
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
       <Navbar />(<div className="h1">{data2.length > 0 && "00-49"}</div>
@@ -136,13 +146,17 @@ const CSVREADER = () => {
           className="div4"
           onClick={() => {
             setNumber2(Math.floor(Math.random() * dataLemght2.length));
+            pushData();
           }}
         >
           {dataLemght2[number2]}
         </div>
         <div
           className="div2"
-          onClick={() => createRandom2(dataLemght2, dataLemght2.length)}
+          onClick={() => {
+            updatePlay();
+            createRandom2(dataLemght2, dataLemght2.length);
+          }}
         >
           Generate 00-49
           <span>Length-{dataLemght.length}</span>
