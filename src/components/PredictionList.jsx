@@ -4,13 +4,18 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import { AiFillPlayCircle, AiFillCloseCircle } from "react-icons/ai";
+import PushRawArray from "./PushRawArray";
+import SendMaildaily from "./SendMaildaily";
+import Looder from "./looder";
 const PredictionList = () => {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(false);
+  const [showSend, setShowSend] = useState(true);
+
   const navigate = useNavigate();
   useEffect(() => {
     preDataFunc();
-  }, [load]);
+  }, [load, showSend]);
   const preDataFunc = async () => {
     try {
       const { data } = await axios.get(
@@ -52,8 +57,9 @@ const PredictionList = () => {
   };
   return (
     <>
-      <Navbar />
-      {data.length > 0 && (
+      <SendMaildaily setShowSend={setShowSend} showSend={showSend} />
+      <PushRawArray />
+      {data.length > 0 ? (
         <div className={`w-full h-full flex  p-5 flex-col gap-2 `}>
           {data.map((item, i) => {
             return (
@@ -74,11 +80,12 @@ const PredictionList = () => {
                     Round-1:{" "}
                     <span className="text-[12px] font-bold">
                       {item.firstRound.data1.map((item) => {
-                        return item.results.map((item) => {
+                        return item.results.map((item, i) => {
                           return (
                             <span
                               className={`${item?.play && "text-blue-600"}  `}
                               style={{ color: `${item.hit && "red"}` }}
+                              key={i}
                             >
                               {item.number},{" "}
                             </span>
@@ -88,15 +95,16 @@ const PredictionList = () => {
                     </span>
                   </span>
                   <span className="text-[16px] font-bold">
+                    <hr className="h-[1px] text-black" />
                     Round-2:{" "}
-                    <span>
+                    <span className="text-[12px] font-bold">
                       {item.firstRound.data2.map((item) => {
-                        return item.results.map((item) => {
-                          console.log(item.play);
+                        return item.results.map((item, i) => {
                           return (
                             <span
                               className={`${item?.play && "text-blue-600"}  `}
                               style={{ color: `${item.hit && "red"}` }}
+                              key={i}
                             >
                               {item.number},{" "}
                             </span>
@@ -146,6 +154,8 @@ const PredictionList = () => {
             );
           })}
         </div>
+      ) : (
+        <Looder />
       )}
     </>
   );

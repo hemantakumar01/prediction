@@ -20,7 +20,6 @@ const CSVREADER = () => {
   console.log(data2);
   const pushData = async () => {
     try {
-      let sampleData = { name: "Hemant" };
       const { res } = await axios.post(
         `${process.env.REACT_APP_BACKEND_URL}/pushData`,
         {
@@ -31,6 +30,7 @@ const CSVREADER = () => {
       console.log(error);
     }
   };
+  pushData();
 
   const pushArray = async () => {
     try {
@@ -87,17 +87,7 @@ const CSVREADER = () => {
       console.log(error);
     }
   };
-  const updatePlay = async () => {
-    try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/updatePlayToTrue/654cfae9740403b12dc160f1`,
-        { round1: true, round2: true, id: "654cfae9740403b12dc160f1" }
-      );
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
   return (
     <>
       <Navbar />(<div className="h1">{data2.length > 0 && "00-49"}</div>
@@ -154,7 +144,6 @@ const CSVREADER = () => {
         <div
           className="div2"
           onClick={() => {
-            updatePlay();
             createRandom2(dataLemght2, dataLemght2.length);
           }}
         >

@@ -3,9 +3,10 @@ import Navbar from "./Navbar";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import moment from "moment";
+import Looder from "./looder";
 
 const ResultsDetailPage = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [reload, setReload] = useState(false);
   const params = useParams();
 
@@ -48,107 +49,69 @@ const ResultsDetailPage = () => {
             <h1 className="text-[20px] font-bold my-2 text-center">
               First Round
             </h1>
-            <div className="firstround1 flex  items-center justify-center">
-              <div className="flex  gap-4">
-                <div className="flex flex-col ">
-                  {data?.firstRound?.data1?.map((item, di) => {
-                    return item.results.map((item, ri) => {
-                      return (
-                        <>
-                          <div className="flex gap-2">
-                            <span className={`${item.hit && "text-red-600"} `}>
-                              {item.number}
-                            </span>
-                            <input
-                              type="checkbox"
-                              name="hit"
-                              onChange={(e) => {
-                                handleCheckbox(e, item._id, di, ri);
-                              }}
-                            />
-                          </div>
-                        </>
-                      );
-                    });
-                  })}
-                </div>
-                <div className="flex flex-col ">
-                  {data?.firstRound?.data1?.map((item, di) => {
-                    return item.results.map((item, ri) => {
-                      return (
-                        <>
-                          <div className="flex gap-2">
-                            <span className={`${item.hit && "text-red-600"} `}>
-                              {item.number}
-                            </span>
-                            <input
-                              type="checkbox"
-                              name="hit"
-                              onChange={(e) => {
-                                handleCheckbox(e, item._id, di, ri);
-                              }}
-                            />
-                          </div>
-                        </>
-                      );
-                    });
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <h1 className="text-[20px] font-bold my-2 text-center">
-              Second Round
-            </h1>
-            <div className="firstround2 flex flex-col items-center justify-center">
-              <div className="flex  gap-4">
-                <div className="flex flex-col ">
-                  {data?.firstRound?.data1?.map((item, di) => {
-                    return item.results.map((item, ri) => {
-                      return (
-                        <>
-                          <div className="flex gap-2">
-                            <span className={`${item.hit && "text-red-600"} `}>
-                              {item.number}
-                            </span>
-                            <input
-                              type="checkbox"
-                              name="hit"
-                              onChange={(e) => {
-                                handleCheckbox(e, item._id, di, ri);
-                              }}
-                            />
-                          </div>
-                        </>
-                      );
-                    });
-                  })}
-                </div>
-                <div className="flex flex-col ">
-                  {data?.firstRound?.data1?.map((item, di) => {
-                    return item.results.map((item, ri) => {
-                      return (
-                        <>
-                          <div className="flex gap-2">
-                            <span className={`${item.hit && "text-red-600"} `}>
-                              {item.number}
-                            </span>
-                            <input
-                              type="checkbox"
-                              name="hit"
-                              onChange={(e) => {
-                                handleCheckbox(e, item._id, di, ri);
-                              }}
-                            />
-                          </div>
-                        </>
-                      );
-                    });
-                  })}
+
+            {data.firstRound ? (
+              <div className="firstround1 flex  items-center justify-center">
+                <div className="flex  gap-10   ">
+                  <div className="flex flex-col ">
+                    {data?.firstRound?.data1?.map((item, di) => {
+                      return item.results.map((item, ri) => {
+                        return (
+                          <>
+                            <div
+                              className="flex gap-2 justify-between"
+                              key={(ri, di)}
+                            >
+                              <span
+                                className={`${item.hit && "text-red-600"} `}
+                              >
+                                {item.number}
+                              </span>
+                              <input
+                                type="checkbox"
+                                name="hit"
+                                onChange={(e) => {
+                                  handleCheckbox(e, item._id, di, ri);
+                                }}
+                              />
+                            </div>
+                          </>
+                        );
+                      });
+                    })}
+                  </div>
+                  <div className="flex flex-col ">
+                    {data?.firstRound?.data2?.map((item, di) => {
+                      return item.results.map((item, ri) => {
+                        return (
+                          <>
+                            <div
+                              className="flex gap-2 justify-between"
+                              key={(ri, di)}
+                            >
+                              <span
+                                className={`${item.hit && "text-red-600"} `}
+                              >
+                                {item.number}
+                              </span>
+                              <input
+                                type="checkbox"
+                                name="hit"
+                                onChange={(e) => {
+                                  handleCheckbox(e, item._id, di, ri);
+                                }}
+                              />
+                            </div>
+                          </>
+                        );
+                      });
+                    })}
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              <Looder />
+            )}
           </div>
 
           {/* second round */}

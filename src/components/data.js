@@ -1,5 +1,65 @@
 export const data = [
   {
+    date: "10-11-2023",
+    first: 87,
+    second: 36,
+  },
+  {
+    date: "09-11-2023",
+    first: 51,
+    second: 11,
+  },
+  {
+    date: "08-11-2023",
+    first: 35,
+    second: "00",
+  },
+  {
+    date: "07-11-2023",
+    first: 94,
+    second: 65,
+  },
+  {
+    date: "06-11-2023",
+    first: 89,
+    second: 95,
+  },
+  {
+    date: "04-11-2023",
+    first: 17,
+    second: 91,
+  },
+  {
+    date: "03-11-2023",
+    first: 40,
+    second: "05",
+  },
+  {
+    date: "02-11-2023",
+    first: 89,
+    second: 62,
+  },
+  {
+    date: "01-11-2023",
+    first: "02",
+    second: 53,
+  },
+  {
+    date: "31-10-2023",
+    first: 91,
+    second: 95,
+  },
+  {
+    date: "30-10-2023",
+    first: 85,
+    second: 19,
+  },
+  {
+    date: "28-10-2023",
+    first: 91,
+    second: 47,
+  },
+  {
     date: "27-10-2023",
     first: 26,
     second: 53,
@@ -17,7 +77,7 @@ export const data = [
   {
     date: "23-10-2023",
     first: 77,
-    second: 0,
+    second: "00",
   },
   {
     date: "21-10-2023",
@@ -37,7 +97,7 @@ export const data = [
   {
     date: "18-10-2023",
     first: 64,
-    second: 6,
+    second: "06",
   },
   {
     date: "17-10-2023",
@@ -71,7 +131,7 @@ export const data = [
   },
   {
     date: "10-10-2023",
-    first: 5,
+    first: "05",
     second: 15,
   },
   {
@@ -132,7 +192,7 @@ export const data = [
   {
     date: "26-09-2023",
     first: 85,
-    second: 1,
+    second: "01",
   },
   {
     date: "25-09-2023",
@@ -142,7 +202,7 @@ export const data = [
   {
     date: "23-09-2023",
     first: 52,
-    second: 7,
+    second: "07",
   },
   {
     date: "22-09-2023",
@@ -277,11 +337,11 @@ export const data = [
   {
     date: "23-08-2023",
     first: 25,
-    second: 1,
+    second: "01",
   },
   {
     date: "22-08-2023",
-    first: 3,
+    first: "03",
     second: 83,
   },
   {
@@ -296,7 +356,7 @@ export const data = [
   },
   {
     date: "18-08-2023",
-    first: 3,
+    first: "03",
     second: 33,
   },
   {
@@ -312,12 +372,12 @@ export const data = [
   {
     date: "14-08-2023",
     first: 64,
-    second: 6,
+    second: "06",
   },
   {
     date: "12-08-2023",
     first: 78,
-    second: 4,
+    second: "04",
   },
   {
     date: "11-08-2023",
@@ -342,7 +402,7 @@ export const data = [
   {
     date: "07-08-2023",
     first: 99,
-    second: 8,
+    second: "08",
   },
   {
     date: "05-08-2023",
@@ -352,11 +412,11 @@ export const data = [
   {
     date: "04-08-2023",
     first: 36,
-    second: 6,
+    second: "06",
   },
   {
     date: "03-08-2023",
-    first: 0,
+    first: "00",
     second: 70,
   },
   {
@@ -371,7 +431,7 @@ export const data = [
   },
   {
     date: "31-07-2023",
-    first: 2,
+    first: "02",
     second: 44,
   },
   {
@@ -432,7 +492,7 @@ export const data = [
   {
     date: "17-07-2023",
     first: 63,
-    second: 1,
+    second: "01",
   },
   {
     date: "15-07-2023",
@@ -462,7 +522,7 @@ export const data = [
   {
     date: "10-07-2023",
     first: 70,
-    second: 1,
+    second: "01",
   },
   {
     date: "08-07-2023",
@@ -556,7 +616,7 @@ export const data = [
   },
   {
     date: "17-06-2023",
-    first: 5,
+    first: "05",
     second: 38,
   },
   {
@@ -591,7 +651,7 @@ export const data = [
   },
   {
     date: "09-06-2023",
-    first: 6,
+    first: "06",
     second: 35,
   },
   {
@@ -615,6 +675,11 @@ export const data = [
     second: 76,
   },
   {
+    date: "03-06-2023",
+    first: "04",
+    second: "Xx",
+  },
+  {
     date: "02-06-2023",
     first: 42,
     second: 91,
@@ -622,7 +687,7 @@ export const data = [
   {
     date: "01-06-2023",
     first: 36,
-    second: 4,
+    second: "04",
   },
   {
     date: "31-05-2023",
@@ -686,7 +751,7 @@ export const data = [
   },
   {
     date: "17-05-2023",
-    first: 4,
+    first: "04",
     second: 98,
   },
   {
@@ -741,8 +806,8 @@ export const data = [
   },
   {
     date: "04-05-2023",
-    first: 6,
-    second: 1,
+    first: "06",
+    second: "01",
   },
   {
     date: "03-05-2023",
@@ -751,7 +816,7 @@ export const data = [
   },
   {
     date: "02-05-2023",
-    first: 0,
+    first: "00",
     second: 99,
   },
   {
@@ -781,7 +846,7 @@ export const data = [
   },
   {
     date: "25-04-2023",
-    first: 9,
+    first: "09",
     second: 65,
   },
   {
@@ -806,7 +871,7 @@ export const data = [
   },
   {
     date: "19-04-2023",
-    first: 9,
+    first: "09",
     second: 44,
   },
   {
@@ -816,7 +881,7 @@ export const data = [
   },
   {
     date: "17-04-2023",
-    first: 0,
+    first: "00",
     second: 16,
   },
   {
@@ -862,17 +927,17 @@ export const data = [
   {
     date: "05-04-2023",
     first: 38,
-    second: 8,
+    second: "08",
   },
   {
     date: "04-04-2023",
     first: 95,
-    second: 1,
+    second: "01",
   },
   {
     date: "03-04-2023",
     first: 89,
-    second: 9,
+    second: "09",
   },
   {
     date: "01-04-2023",
@@ -881,12 +946,12 @@ export const data = [
   },
   {
     date: "31-03-2023",
-    first: 8,
+    first: "08",
     second: 34,
   },
   {
     date: "30-03-2023",
-    first: 6,
+    first: "06",
     second: 66,
   },
   {
@@ -921,7 +986,7 @@ export const data = [
   },
   {
     date: "22-03-2023",
-    first: 4,
+    first: "04",
     second: 13,
   },
   {
@@ -966,7 +1031,7 @@ export const data = [
   },
   {
     date: "11-03-2023",
-    first: 7,
+    first: "07",
     second: 15,
   },
   {
@@ -980,8 +1045,13 @@ export const data = [
     second: 14,
   },
   {
+    date: "08-03-2023",
+    first: "off",
+    second: "off",
+  },
+  {
     date: "07-03-2023",
-    first: 9,
+    first: "09",
     second: 61,
   },
   {
@@ -1026,7 +1096,7 @@ export const data = [
   },
   {
     date: "23-02-2023",
-    first: 9,
+    first: "09",
     second: 15,
   },
   {
@@ -1042,7 +1112,7 @@ export const data = [
   {
     date: "20-02-2023",
     first: 73,
-    second: 7,
+    second: "07",
   },
   {
     date: "18-02-2023",
@@ -1066,7 +1136,7 @@ export const data = [
   },
   {
     date: "14-02-2023",
-    first: 1,
+    first: "01",
     second: 47,
   },
   {
@@ -1091,7 +1161,7 @@ export const data = [
   },
   {
     date: "08-02-2023",
-    first: 8,
+    first: "08",
     second: 10,
   },
   {
@@ -1102,7 +1172,7 @@ export const data = [
   {
     date: "06-02-2023",
     first: 22,
-    second: 1,
+    second: "01",
   },
   {
     date: "04-02-2023",
@@ -1197,7 +1267,7 @@ export const data = [
   {
     date: "13-01-2023",
     first: 12,
-    second: 2,
+    second: "02",
   },
   {
     date: "12-01-2023",
@@ -1252,7 +1322,7 @@ export const data = [
   {
     date: "31-12-2022",
     first: 91,
-    second: 3,
+    second: "03",
   },
   {
     date: "30-12-2022",
@@ -1326,7 +1396,7 @@ export const data = [
   },
   {
     date: "14-12-2022",
-    first: 4,
+    first: "04",
     second: 74,
   },
   {
@@ -1337,17 +1407,22 @@ export const data = [
   {
     date: "12-12-2022",
     first: 48,
-    second: 7,
+    second: "07",
   },
   {
     date: "10-12-2022",
     first: 18,
-    second: 1,
+    second: "01",
   },
   {
     date: "09-12-2022",
     first: 57,
     second: 53,
+  },
+  {
+    date: "08-12-2022",
+    first: "xx",
+    second: "xx",
   },
   {
     date: "07-12-2022",
@@ -1376,8 +1451,8 @@ export const data = [
   },
   {
     date: "01-12-2022",
-    first: 2,
-    second: 5,
+    first: "02",
+    second: "05",
   },
   {
     date: "30-11-2022",
@@ -1387,7 +1462,7 @@ export const data = [
   {
     date: "29-11-2022",
     first: 49,
-    second: 7,
+    second: "07",
   },
   {
     date: "28-11-2022",
@@ -1396,7 +1471,7 @@ export const data = [
   },
   {
     date: "26-11-2022",
-    first: 2,
+    first: "02",
     second: 54,
   },
   {
@@ -1411,13 +1486,13 @@ export const data = [
   },
   {
     date: "23-11-2022",
-    first: 8,
+    first: "08",
     second: 82,
   },
   {
     date: "22-11-2022",
     first: 70,
-    second: 4,
+    second: "04",
   },
   {
     date: "21-11-2022",
@@ -1431,7 +1506,7 @@ export const data = [
   },
   {
     date: "18-11-2022",
-    first: 8,
+    first: "08",
     second: 77,
   },
   {
@@ -1472,7 +1547,7 @@ export const data = [
   {
     date: "09-11-2022",
     first: 91,
-    second: 6,
+    second: "06",
   },
   {
     date: "08-11-2022",
@@ -1496,7 +1571,7 @@ export const data = [
   },
   {
     date: "03-11-2022",
-    first: 8,
+    first: "08",
     second: 45,
   },
   {
@@ -1511,7 +1586,7 @@ export const data = [
   },
   {
     date: "31-10-2022",
-    first: 8,
+    first: "08",
     second: 89,
   },
   {
@@ -1556,7 +1631,7 @@ export const data = [
   },
   {
     date: "20-10-2022",
-    first: 8,
+    first: "08",
     second: 57,
   },
   {
@@ -1577,7 +1652,7 @@ export const data = [
   {
     date: "15-10-2022",
     first: 18,
-    second: 5,
+    second: "05",
   },
   {
     date: "14-10-2022",
@@ -1587,7 +1662,7 @@ export const data = [
   {
     date: "13-10-2022",
     first: 98,
-    second: 8,
+    second: "08",
   },
   {
     date: "12-10-2022",
@@ -1597,7 +1672,7 @@ export const data = [
   {
     date: "11-10-2022",
     first: 46,
-    second: 1,
+    second: "01",
   },
   {
     date: "10-10-2022",
@@ -1612,12 +1687,17 @@ export const data = [
   {
     date: "07-10-2022",
     first: 63,
-    second: 6,
+    second: "06",
   },
   {
     date: "06-10-2022",
     first: 90,
     second: 92,
+  },
+  {
+    date: "05-10-2022",
+    first: "OFF",
+    second: "OFF",
   },
   {
     date: "04-10-2022",
@@ -1626,7 +1706,7 @@ export const data = [
   },
   {
     date: "03-10-2022",
-    first: 1,
+    first: "01",
     second: 49,
   },
   {
@@ -1672,7 +1752,7 @@ export const data = [
   {
     date: "22-09-2022",
     first: 59,
-    second: 6,
+    second: "06",
   },
   {
     date: "21-09-2022",
@@ -1792,7 +1872,7 @@ export const data = [
   {
     date: "25-08-2022",
     first: 43,
-    second: 2,
+    second: "02",
   },
   {
     date: "24-08-2022",
@@ -1841,17 +1921,17 @@ export const data = [
   },
   {
     date: "12-08-2022",
-    first: 2,
+    first: "02",
     second: 90,
   },
   {
     date: "11-08-2022",
-    first: 3,
+    first: "03",
     second: 82,
   },
   {
     date: "10-08-2022",
-    first: 1,
+    first: "01",
     second: 70,
   },
   {
@@ -1912,7 +1992,7 @@ export const data = [
   {
     date: "27-07-2022",
     first: 49,
-    second: 8,
+    second: "08",
   },
   {
     date: "26-07-2022",
@@ -1926,7 +2006,7 @@ export const data = [
   },
   {
     date: "23-07-2022",
-    first: 3,
+    first: "03",
     second: 49,
   },
   {
@@ -1936,7 +2016,7 @@ export const data = [
   },
   {
     date: "21-07-2022",
-    first: 2,
+    first: "02",
     second: 99,
   },
   {
@@ -1967,7 +2047,7 @@ export const data = [
   {
     date: "14-07-2022",
     first: 67,
-    second: 6,
+    second: "06",
   },
   {
     date: "13-07-2022",
@@ -1981,13 +2061,13 @@ export const data = [
   },
   {
     date: "11-07-2022",
-    first: 4,
+    first: "04",
     second: 72,
   },
   {
     date: "09-07-2022",
     first: 61,
-    second: 2,
+    second: "02",
   },
   {
     date: "08-07-2022",
@@ -2026,7 +2106,7 @@ export const data = [
   },
   {
     date: "30-06-2022",
-    first: 4,
+    first: "04",
     second: 85,
   },
   {
@@ -2037,7 +2117,7 @@ export const data = [
   {
     date: "28-06-2022",
     first: 47,
-    second: 2,
+    second: "02",
   },
   {
     date: "27-06-2022",
@@ -2052,7 +2132,7 @@ export const data = [
   {
     date: "24-06-2022",
     first: 30,
-    second: 8,
+    second: "08",
   },
   {
     date: "23-06-2022",
@@ -2061,7 +2141,7 @@ export const data = [
   },
   {
     date: "22-06-2022",
-    first: 3,
+    first: "03",
     second: 36,
   },
   {
@@ -2086,7 +2166,7 @@ export const data = [
   },
   {
     date: "16-06-2022",
-    first: 8,
+    first: "08",
     second: 43,
   },
   {
@@ -2222,7 +2302,7 @@ export const data = [
   {
     date: "16-05-2022",
     first: 54,
-    second: 1,
+    second: "01",
   },
   {
     date: "14-05-2022",
@@ -2231,7 +2311,7 @@ export const data = [
   },
   {
     date: "13-05-2022",
-    first: 3,
+    first: "03",
     second: 52,
   },
   {
@@ -2257,7 +2337,7 @@ export const data = [
   {
     date: "07-05-2022",
     first: 69,
-    second: 5,
+    second: "05",
   },
   {
     date: "06-05-2022",
@@ -2302,7 +2382,7 @@ export const data = [
   {
     date: "27-04-2022",
     first: 19,
-    second: 3,
+    second: "03",
   },
   {
     date: "26-04-2022",
@@ -2321,7 +2401,7 @@ export const data = [
   },
   {
     date: "22-04-2022",
-    first: 6,
+    first: "06",
     second: 37,
   },
   {
@@ -2336,8 +2416,8 @@ export const data = [
   },
   {
     date: "19-04-2022",
-    first: 6,
-    second: 0,
+    first: "06",
+    second: "00",
   },
   {
     date: "18-04-2022",
@@ -2346,8 +2426,8 @@ export const data = [
   },
   {
     date: "15-04-2022",
-    first: 3,
-    second: 5,
+    first: "03",
+    second: "05",
   },
   {
     date: "14-04-2022",
@@ -2376,7 +2456,7 @@ export const data = [
   },
   {
     date: "08-04-2022",
-    first: 6,
+    first: "06",
     second: 12,
   },
   {
@@ -2391,17 +2471,17 @@ export const data = [
   },
   {
     date: "05-04-2022",
-    first: 2,
+    first: "02",
     second: 15,
   },
   {
     date: "04-04-2022",
-    first: 8,
+    first: "08",
     second: 99,
   },
   {
     date: "02-04-2022",
-    first: 5,
+    first: "05",
     second: 27,
   },
   {
@@ -2426,13 +2506,13 @@ export const data = [
   },
   {
     date: "28-03-2022",
-    first: 0,
+    first: "00",
     second: 63,
   },
   {
     date: "26-03-2022",
     first: 45,
-    second: 3,
+    second: "03",
   },
   {
     date: "25-03-2022",
@@ -2442,7 +2522,7 @@ export const data = [
   {
     date: "24-03-2022",
     first: 61,
-    second: 9,
+    second: "09",
   },
   {
     date: "23-03-2022",
@@ -2481,7 +2561,7 @@ export const data = [
   },
   {
     date: "14-03-2022",
-    first: 9,
+    first: "09",
     second: 49,
   },
   {
@@ -2506,7 +2586,7 @@ export const data = [
   },
   {
     date: "08-03-2022",
-    first: 9,
+    first: "09",
     second: 72,
   },
   {
@@ -2556,7 +2636,7 @@ export const data = [
   },
   {
     date: "23-02-2022",
-    first: 2,
+    first: "02",
     second: 40,
   },
   {
@@ -2652,7 +2732,7 @@ export const data = [
   {
     date: "31-01-2022",
     first: 36,
-    second: 5,
+    second: "05",
   },
   {
     date: "29-01-2022",
@@ -2681,12 +2761,12 @@ export const data = [
   },
   {
     date: "20-01-2022",
-    first: 2,
+    first: "02",
     second: 83,
   },
   {
     date: "18-01-2022",
-    first: 4,
+    first: "04",
     second: 59,
   },
   {
@@ -2727,7 +2807,7 @@ export const data = [
   {
     date: "07-01-2022",
     first: 67,
-    second: 5,
+    second: "05",
   },
   {
     date: "06-01-2022",
@@ -2761,7 +2841,7 @@ export const data = [
   },
   {
     date: "28-12-2021",
-    first: 5,
+    first: "05",
     second: 44,
   },
   {
@@ -2841,7 +2921,7 @@ export const data = [
   },
   {
     date: "06-12-2021",
-    first: 1,
+    first: "01",
     second: 53,
   },
   {
@@ -2866,8 +2946,8 @@ export const data = [
   },
   {
     date: "30-11-2021",
-    first: 2,
-    second: 3,
+    first: "02",
+    second: "03",
   },
   {
     date: "29-11-2021",
@@ -2876,8 +2956,8 @@ export const data = [
   },
   {
     date: "27-11-2021",
-    first: 9,
-    second: 1,
+    first: "09",
+    second: "01",
   },
   {
     date: "26-11-2021",
@@ -2916,7 +2996,7 @@ export const data = [
   },
   {
     date: "18-11-2021",
-    first: 9,
+    first: "09",
     second: 53,
   },
   {
@@ -2927,11 +3007,11 @@ export const data = [
   {
     date: "16-11-2021",
     first: 65,
-    second: 4,
+    second: "04",
   },
   {
     date: "15-11-2021",
-    first: 3,
+    first: "03",
     second: 12,
   },
   {
@@ -2941,7 +3021,7 @@ export const data = [
   },
   {
     date: "11-11-2021",
-    first: 1,
+    first: "01",
     second: 38,
   },
   {
@@ -2966,7 +3046,7 @@ export const data = [
   },
   {
     date: "05-11-2021",
-    first: 3,
+    first: "03",
     second: 85,
   },
   {
@@ -2977,7 +3057,7 @@ export const data = [
   {
     date: "02-11-2021",
     first: 25,
-    second: 3,
+    second: "03",
   },
   {
     date: "01-11-2021",
@@ -3021,7 +3101,7 @@ export const data = [
   },
   {
     date: "21-10-2021",
-    first: 1,
+    first: "01",
     second: 96,
   },
   {
@@ -3042,7 +3122,7 @@ export const data = [
   {
     date: "16-10-2021",
     first: 12,
-    second: 7,
+    second: "07",
   },
   {
     date: "14-10-2021",
@@ -3067,7 +3147,7 @@ export const data = [
   {
     date: "09-10-2021",
     first: 42,
-    second: 9,
+    second: "09",
   },
   {
     date: "08-10-2021",
@@ -3101,12 +3181,12 @@ export const data = [
   },
   {
     date: "01-10-2021",
-    first: 3,
-    second: 7,
+    first: "03",
+    second: "07",
   },
   {
     date: "30-09-2021",
-    first: 5,
+    first: "05",
     second: 62,
   },
   {
@@ -3116,7 +3196,7 @@ export const data = [
   },
   {
     date: "28-09-2021",
-    first: 8,
+    first: "08",
     second: 39,
   },
   {
@@ -3136,7 +3216,7 @@ export const data = [
   },
   {
     date: "23-09-2021",
-    first: 9,
+    first: "09",
     second: 60,
   },
   {
@@ -3157,7 +3237,7 @@ export const data = [
   {
     date: "18-09-2021",
     first: 63,
-    second: 8,
+    second: "08",
   },
   {
     date: "17-09-2021",
@@ -3181,7 +3261,7 @@ export const data = [
   },
   {
     date: "13-09-2021",
-    first: 8,
+    first: "08",
     second: 11,
   },
   {
@@ -3217,7 +3297,7 @@ export const data = [
   {
     date: "02-09-2021",
     first: 21,
-    second: 7,
+    second: "07",
   },
   {
     date: "01-09-2021",
@@ -3287,7 +3367,7 @@ export const data = [
   {
     date: "26-04-2021",
     first: 88,
-    second: 0,
+    second: "00",
   },
   {
     date: "24-04-2021",
@@ -3307,7 +3387,7 @@ export const data = [
   {
     date: "21-04-2021",
     first: 53,
-    second: 7,
+    second: "07",
   },
   {
     date: "20-04-2021",
@@ -3321,7 +3401,7 @@ export const data = [
   },
   {
     date: "17-04-2021",
-    first: 4,
+    first: "04",
     second: 73,
   },
   {
@@ -3362,7 +3442,7 @@ export const data = [
   {
     date: "08-04-2021",
     first: 78,
-    second: 1,
+    second: "01",
   },
   {
     date: "07-04-2021",
@@ -3412,7 +3492,7 @@ export const data = [
   {
     date: "24-03-2021",
     first: 31,
-    second: 1,
+    second: "01",
   },
   {
     date: "23-03-2021",
@@ -3491,7 +3571,7 @@ export const data = [
   },
   {
     date: "03-03-2021",
-    first: 1,
+    first: "01",
     second: 52,
   },
   {
@@ -3541,7 +3621,7 @@ export const data = [
   },
   {
     date: "18-02-2021",
-    first: 1,
+    first: "01",
     second: 48,
   },
   {
@@ -3552,7 +3632,7 @@ export const data = [
   {
     date: "16-02-2021",
     first: 14,
-    second: 8,
+    second: "08",
   },
   {
     date: "15-01-2021",
@@ -3601,7 +3681,7 @@ export const data = [
   },
   {
     date: "04-01-2021",
-    first: 5,
+    first: "05",
     second: 39,
   },
   {
@@ -3617,6 +3697,6 @@ export const data = [
   {
     date: "01-02-2021",
     first: 18,
-    second: 7,
+    second: "07",
   },
 ];

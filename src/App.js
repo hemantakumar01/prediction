@@ -7,6 +7,7 @@ import LoginForm from "./components/LoginForm";
 import CSVREADER from "./components/CSVREADER";
 import PredictionList from "./components/PredictionList";
 import ResultsDetailPage from "./components/ResultsDetailPage";
+import Previous from "./components/Previous";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/results/:id",
     element: <ResultsDetailPage />,
+  },
+  {
+    path: "/Previous",
+    element: <Previous />,
   },
 ]);
 function App() {
