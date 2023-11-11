@@ -67,7 +67,7 @@ const PredictionList = () => {
                 key={i}
                 className=" w-full h-full flex items-center  gap-3 bg-gray-300 p-3 rounded-sm cursor-pointer"
               >
-                <span className=" w-[100px] bg-purple-600 p-2 text-[10px] text-white rounded-md">
+                <span className=" min-w-[68px] bg-purple-600 p-2 text-[10px] text-white rounded-md text-center ">
                   {moment(item.createdAt).format("DD-MM-YYYY")}
                 </span>
                 <div
@@ -76,9 +76,9 @@ const PredictionList = () => {
                     navigate(`/results/${item._id}`);
                   }}
                 >
-                  <span className="text-[16px] font-bold">
+                  <span className="text-[12px] font-bold">
                     Round-1:{" "}
-                    <span className="text-[12px] font-bold">
+                    <span className="text-[10px] font-bold">
                       {item.firstRound.data1.map((item) => {
                         return item.results.map((item, i) => {
                           return (
@@ -94,10 +94,10 @@ const PredictionList = () => {
                       })}
                     </span>
                   </span>
-                  <span className="text-[16px] font-bold">
+                  <span className="text-[12px] font-bold">
                     <hr className="h-[1px] text-black" />
                     Round-2:{" "}
-                    <span className="text-[12px] font-bold">
+                    <span className="text-[10px] font-bold">
                       {item.firstRound.data2.map((item) => {
                         return item.results.map((item, i) => {
                           return (
@@ -114,7 +114,7 @@ const PredictionList = () => {
                     </span>
                   </span>
                 </div>
-                <div className="text-green-600 p-2 text-[12px] rounded-md flex flex-col items-center justify-between gap-3">
+                <div className="text-black p-2 text-[12px] rounded-md flex flex-col items-center justify-between gap-3">
                   <div className="round1 flex text-[30px]">
                     <span
                       onClick={() => {

@@ -13,11 +13,11 @@ const ResultsDetailPage = () => {
   useEffect(() => {
     preDataFunc();
   }, [reload]);
-  const handleCheckbox = async (item, id, di, ri) => {
+  const handleCheckbox = async (item, id, di, ri, dataof) => {
     try {
       const { data } = await axios.put(
         `${process.env.REACT_APP_BACKEND_URL}/updateHit/${params.id}/${di}/${ri}`,
-        { hit: item.target.checked }
+        { hit: item.target.checked, data: dataof }
       );
       setReload(!reload);
     } catch (error) {
@@ -71,7 +71,7 @@ const ResultsDetailPage = () => {
                                 type="checkbox"
                                 name="hit"
                                 onChange={(e) => {
-                                  handleCheckbox(e, item._id, di, ri);
+                                  handleCheckbox(e, item._id, di, ri, "data1");
                                 }}
                               />
                             </div>
@@ -98,7 +98,7 @@ const ResultsDetailPage = () => {
                                 type="checkbox"
                                 name="hit"
                                 onChange={(e) => {
-                                  handleCheckbox(e, item._id, di, ri);
+                                  handleCheckbox(e, item._id, di, ri, "data2");
                                 }}
                               />
                             </div>

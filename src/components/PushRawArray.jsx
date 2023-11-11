@@ -3,7 +3,7 @@ import axios from "axios";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const PushRawArray = () => {
+const PushRawArray = ({ disable }) => {
   const [date, setDate] = useState("");
   const [first, setFirst] = useState("");
   const [second, setSecond] = useState("");
@@ -31,20 +31,28 @@ const PushRawArray = () => {
 
   return (
     <div className="">
-      <div
-        className="text-[20px] flex items-end justify-end mx-5 text-left"
-        onClick={() => setShow(!show)}
-      >
-        {show ? (
-          <span>
-            <AiFillCloseCircle />
-          </span>
-        ) : (
+      {disable ? (
+        <div className="text-[20px] flex items-end justify-end mx-5 text-left">
           <span>
             <GiHamburgerMenu />
           </span>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div
+          className="text-[20px] flex items-end justify-end mx-5 text-left"
+          onClick={() => setShow(!show)}
+        >
+          {show ? (
+            <span>
+              <AiFillCloseCircle />
+            </span>
+          ) : (
+            <span>
+              <GiHamburgerMenu />
+            </span>
+          )}
+        </div>
+      )}
       {show && (
         <>
           <div className="">
