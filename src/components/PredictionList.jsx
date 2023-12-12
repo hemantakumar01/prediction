@@ -55,13 +55,18 @@ const PredictionList = () => {
       console.log(error);
     }
   };
+
+  const sortedData = data.sort(
+    (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+  );
+
   return (
     <>
       <SendMaildaily setShowSend={setShowSend} showSend={showSend} />
       <PushRawArray />
       {data.length > 0 ? (
         <div className={`w-full h-full flex  p-5 flex-col gap-2 `}>
-          {data.map((item, i) => {
+          {sortedData.map((item, i) => {
             return (
               <div
                 key={i}
