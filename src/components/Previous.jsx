@@ -7,6 +7,7 @@ import moment from "moment";
 
 const Previous = () => {
   const [data, setData] = useState([]);
+  const [toastResults, setToastResults] = useState(0);
   useEffect(() => {
     fetchData();
   }, []);
@@ -38,11 +39,41 @@ const Previous = () => {
   const sortedData = isoDateStringArray.sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   );
+  const Head = [];
+  const Tell = [];
+  sortedData.map((item) => {
+    if (item.first < 50) {
+      Head.push(Number(item.first));
+    } else {
+      Tell.push(Number(item.first));
+    }
+  });
+  let toss;
+  let HeadPercentage;
+  let TellPercentage;
+  if (Head.length > 0 || Tell.length > 0) {
+    toss = Head.length / Tell.length;
+
+    HeadPercentage = toss * 100;
+    TellPercentage = 100 - HeadPercentage;
+  }
 
   return (
     <div className="flex gap-2 flex-col">
       <Navbar />
-      <h1 className="text-center text-[22px] font-bold">First Round</h1>
+      {sortedData.length > 0 && (
+        <div className="text-center  font-bold flex flex-col gap-2 items-start">
+          <span>H- {HeadPercentage?.toFixed(2)}%</span>
+          <span>T- {TellPercentage?.toFixed(2)}%</span>
+          <span
+            className={`${
+              HeadPercentage > TellPercentage ? "bg-black" : "bg-red-500"
+            } text-white w-12 h-12 p-1 flex justify-center items-center rounded-[50%]`}
+          >
+            {HeadPercentage > TellPercentage ? "H" : "T"}
+          </span>
+        </div>
+      )}
       {sortedData.length > 0 ? (
         sortedData.map((item, i) => (
           <div
