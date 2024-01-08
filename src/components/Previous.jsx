@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import Looder from "./looder";
 import moment from "moment";
+import "./prec.css";
 
 const Previous = () => {
   const [data, setData] = useState([]);
@@ -66,7 +67,7 @@ const Previous = () => {
           <span>H- {HeadPercentage?.toFixed(2)}%</span>
           <span>T- {TellPercentage?.toFixed(2)}%</span>
           <span
-            className={`${
+            className={`coin ${
               HeadPercentage > TellPercentage ? "bg-black" : "bg-red-500"
             } text-white w-12 h-12 p-1 flex justify-center items-center rounded-[50%]`}
           >
